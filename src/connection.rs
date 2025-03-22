@@ -23,6 +23,7 @@ struct CityInfo {
 /// Returns weather details about a certain city
 fn getAPIkey() -> String {
     dotenv().ok();
+
     env::var("APIKEY").expect("APIKEY not found in .env file")
 }
 
